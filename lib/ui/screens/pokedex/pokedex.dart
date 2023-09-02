@@ -20,6 +20,8 @@ import 'package:pokedex/ui/widgets/main_app_bar.dart';
 import 'package:pokedex/ui/widgets/pokeball_background.dart';
 import 'package:pokedex/ui/widgets/pokemon_refresh_control.dart';
 
+import '../../../states/theme/theme_cubit.dart';
+
 part 'sections/fab_menu.dart';
 part 'sections/pokemon_grid.dart';
 
@@ -33,6 +35,8 @@ class PokedexScreen extends StatefulWidget {
 class _PokedexScreenState extends State<PokedexScreen> {
   @override
   Widget build(BuildContext context) {
+
+
     return PokeballBackground(
       child: Stack(
         children: [
